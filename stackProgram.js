@@ -34,3 +34,7 @@ class StackProgram{
         
     }
     
+     peek(){
+
+        console.log(`Stack's top piece is ${this.collection[this.count-1]}`)
+        return this.collection[this.count-1]
