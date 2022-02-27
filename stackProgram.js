@@ -19,3 +19,18 @@ class StackProgram{
             return this.count-1;
         }
     }
+
+    pop(){
+
+        if(this.count==0) {
+            console.log("Nothing to Pop");
+        }
+        else{
+            let dcollection=this.collection[this.count-1];
+            this.count=this.count-1;
+            console.log(`${dcollection} removed`);
+            return dcollection;
+        }
+        
+    }
+    
